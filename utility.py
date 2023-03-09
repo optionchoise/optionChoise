@@ -21,28 +21,19 @@ LastYear = dt.datetime.now().year-1
 StockList = ['AAPL', 'JPM', 'TSLA', 'MSFT', 'SPY']
 StockList = ['AAPL']
 StockDownloadPath = '../output/stockPrice/' 
-## StockDownloadPath = '/users/lan/Documents/pyproj38/TEST/output/stockPrice/' 
 # + stockSymbol +'.csv'
 OptionDownloadPath = '../output/optionPrice2022/' 
-# OptionDownloadPath = '/users/lan/Documents/pyproj38/TEST/output/optionPrice2022/' 
 # + stockSymbol +'/+stockSymbol+'_optionDownloadDate.csv'
 
-# readStockcsvPath = r'file:///users/lan/Documents/pyproj38/TEST/output/stockPrice/'
 readStockcsvPath = r'../output/stockPrice/'
 #stockSymbol +'.csv'
 readOptioncsvPath = r'../output/optionPrice2022/'
-# readOptioncsvPath = r'file:///users/lan/Documents/pyproj38/TEST/output/optionPrice2022/'
 # + stockSymbol+expireDate.replace('-', '')+'yf.csv'
 
 OptionExpireDateRptPath = '../output/optionPriceAtExpireDate/'
 optionStrikeRptPath = '../output/optionPriceByStrikePrice/'
 midOptionCsvPath = '../output/yfoption/'
 readMidOptionCsvPath = r'../output/yfoption/'
-# OptionExpireDateRptPath = '/users/lan/Documents/pyproj38/TEST/output/optionPriceAtExpireDate/'
-# optionStrikeRptPath = '/users/lan/Documents/pyproj38/TEST/output/optionPriceByStrikePrice/'
-# midOptionCsvPath = '/users/lan/Documents/pyproj38/TEST/output/yfoption/'
-# readMidOptionCsvPath = r'file:///users/lan/Documents/pyproj38/TEST/output/yfoption/'
-
 
 # two dates days difference, default days in between date to today's  in dateString
 def days_between(d1, *d2):
